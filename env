@@ -1,0 +1,21 @@
+# --- 資料庫設定 (PostgreSQL) ---
+POSTGRES_USER=zabbix
+POSTGRES_PASSWORD=zabbix_pwd_secure
+POSTGRES_DB=zabbix
+
+# --- 共通資料庫連接資訊 ---
+# 這些變數會被 Server 與 Web 同時引用
+DB_SERVER_HOST=zabbix-db
+DB_SERVER_PORT=5432
+
+# --- Zabbix Server 設定 ---
+ZBX_SERVER_HOST=zabbix-server
+ZBX_SERVER_PORT=10051
+ZBX_POSTJSCRIPTPATH=/usr/lib/zabbix/alertscripts
+
+# --- Zabbix Web (Nginx) 設定 ---
+ZBX_SERVER_NAME=My_Zabbix
+PHP_TZ=Asia/Taipei
+
+# --- 效能優化 (可選) ---
+ZBX_CACHESIZE=128M
